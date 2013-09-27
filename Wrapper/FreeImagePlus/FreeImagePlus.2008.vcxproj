@@ -127,7 +127,7 @@
       <Culture>0x040c</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>C:\Users\Administrator\Downloads\graphics\stanford_prt\prtSource\prt\FreeImage3154\FreeImage\Source\FreeImageLib\Win32\Release\Lib\FreeImageLib.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)\Source\FreeImageLib\$(Platform)\$(Configuration)\Lib\FreeImageLib.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(Platform)\$(Configuration)\FreeImagePlus.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ProgramDatabaseFile>.\Release/FreeImagePlus.pdb</ProgramDatabaseFile>
@@ -137,13 +137,8 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy         Release\FreeImagePlus.lib         dist\
-
-copy         Release\FreeImagePlus.dll         dist\
-
-copy         FreeImagePlus.h         dist\
-
-</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -181,7 +176,7 @@ copy         FreeImagePlus.h         dist\
       <Culture>0x040c</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>C:\Users\Administrator\Downloads\graphics\stanford_prt\prtSource\prt\FreeImage3154\FreeImage\Source\FreeImageLib\Win32\Release\Lib\FreeImageLib.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)\Source\FreeImageLib\$(Platform)\$(Configuration)\Lib\FreeImageLib.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(Platform)\$(Configuration)\FreeImagePlus.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ProgramDatabaseFile>.\Release/FreeImagePlus.pdb</ProgramDatabaseFile>
@@ -191,13 +186,8 @@ copy         FreeImagePlus.h         dist\
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy         Release\FreeImagePlus.lib         dist\
-
-copy         Release\FreeImagePlus.dll         dist\
-
-copy         FreeImagePlus.h         dist\
-
-</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -231,7 +221,7 @@ copy         FreeImagePlus.h         dist\
       <Culture>0x040c</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>C:\Users\Administrator\Downloads\graphics\stanford_prt\prtSource\prt\FreeImage3154\FreeImage\Source\FreeImageLib\Win32\Debug\Lib\FreeImageLibd.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)\Source\FreeImageLib\$(Platform)\$(Configuration)\Lib\FreeImageLibd.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(Platform)\$(Configuration)\FreeImagePlusd.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -242,13 +232,8 @@ copy         FreeImagePlus.h         dist\
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy         Debug\FreeImagePlusd.lib         dist\
-
-copy         Debug\FreeImagePlusd.dll         dist\
-
-copy         FreeImagePlus.h         dist\
-
-</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -282,7 +267,7 @@ copy         FreeImagePlus.h         dist\
       <Culture>0x040c</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>C:\Users\Administrator\Downloads\graphics\stanford_prt\prtSource\prt\FreeImage3154\FreeImage\Source\FreeImageLib\Win32\Debug\Lib\FreeImageLibd.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)\Source\FreeImageLib\$(Platform)\$(Configuration)\Lib\FreeImageLibd.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(Platform)\$(Configuration)\FreeImagePlusd.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -293,13 +278,8 @@ copy         FreeImagePlus.h         dist\
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy         Debug\FreeImagePlusd.lib         dist\
-
-copy         Debug\FreeImagePlusd.dll         dist\
-
-copy         FreeImagePlus.h         dist\
-
-</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
